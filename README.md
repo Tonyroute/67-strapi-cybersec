@@ -1,6 +1,30 @@
-# 🚀 Getting started with Strapi
+# 🚀 Cybersec KMUTNB
+### Docker and Security ??? 
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+### Week of Compose
+<sub>🤫 Let's start
+```
+ให้ดำเนินสร้าง branch ใหม่ที่ชื่อว่า create-docker-image จาก develop เพื่อเก็บเป็นข้อมูล history หลังจากนั้นให้กลับไปยัง branch  develop เพื่อสร้างไฟล์ docker-compose.yml เพื่อทดสอบใช้งาน docker image ที่เราพึ่งสร้างพร้อมทั้งให้กำหนดมีทั้ง  strapi และ database 
+
+ตัวอย่างชื่อไฟล์ docker-compose.yml
+
+
+version: '3'
+services:
+    app:
+        ....
+    db:
+        ....
+
+***ในตัว configure ของ docker-compose.yml ไม่ควรมีข้อมูลที่เป็นข้อมูลสำคัญของระบบ และที่สำคัญระบบยังคงทำงานได้ปกติ***
+```
+
+
+
+
+
+
+Strapi [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI)
 
 ### `develop`
 
@@ -54,4 +78,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
