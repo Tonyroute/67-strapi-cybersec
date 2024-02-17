@@ -1,0 +1,21 @@
+version: '3'
+services: # In this container include
+  app: # Strapi
+    image: dockergyee/app:1.0.0
+    container_name: 67-ced-strapi
+    restart: unless-stopped
+    environment:
+      - DATABASE_CLIENT = postgres
+      - DATABASE_HOST= db
+      - DATABASE_PORT= 9999
+      - DATABASE_NAME= tanapoom
+      - DATABASE_USER= superman
+      - DATABASE_PASSWORD= dlshj23hl2k
+  db:
+    image: postgres:13
+    container_name: 67-ced-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=  superman
+      - POSTGRES_PASSWORD= dlshj23hl2k
+      - POSTGRES_DB= tanapoom
